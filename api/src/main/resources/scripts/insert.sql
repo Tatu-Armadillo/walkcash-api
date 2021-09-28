@@ -6,8 +6,8 @@ insert into atleta (peso, altura, nome_atleta, cpf, senha, email)
         (47.10, 1.49, 'katiely reis vilas boas', '01001523127', 'katiely123', 'katiely@gmail.com'),
         (72.25, 1.75, 'felipe alves de oliveira', '02665693151', 'dedo123', 'dedo@gmail.com');
 
-insert into percurso (distancia, tempo, observacao, atleta, atividade) 
+insert into percurso (distancia, tempo, data, observacao, atleta, atividade) 
     values 
-        (100.15, '11:25:10', 'percurso percorrido em x segundos', 1, 1),
-        (1500.30, '00:25:50', 'percurso percorrido em y segundos', 2, 2),
-        (5000.30, '01:01:01', 'percurso percorrido em z segundos', 3, 3);
+        (100.15, '11:25:10', '2021-05-05', 'percurso percorrido em x segundos', 1, 1),
+        (1500.30, '00:25:50', '2021-05-25', 'percurso percorrido em y segundos', 2, 2),
+        (5000.30, '01:01:01', '2021-04-07', 'percurso percorrido em z segundos', 3, 3);

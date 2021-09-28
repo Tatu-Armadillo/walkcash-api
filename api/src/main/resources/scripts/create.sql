@@ -17,6 +17,7 @@ drop table if exists percurso;
 create table percurso (
     id_percurso bigint primary key auto_increment,
     distancia decimal(6,2),
+    data date,
     tempo time,
     observacao varchar(100),
     atleta bigint,
