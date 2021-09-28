@@ -1,7 +1,7 @@
 package com.walkcash.api.Controllers;
 
-import com.walkcash.api.Models.AtividadeModel;
-import com.walkcash.api.Repositories.AtividadeRepository;
+import com.walkcash.api.Models.AtletaModel;
+import com.walkcash.api.Repositories.AtletaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -14,17 +14,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/atividades")
-public class AtividadeController {
-
+@RequestMapping("/atletas")
+public class AtletaController {
+ 
     @Autowired
-    private AtividadeRepository atividadeRepository;
+    private AtletaRepository atletaRepository;
 
     @GetMapping
-    public Page<AtividadeModel> visualizarAtividades(@RequestParam(required = false) Long idAtividade,
-            @PageableDefault(sort = "idAtividade", direction = Direction.ASC) Pageable page) {
-        Page<AtividadeModel> atividades = atividadeRepository.findAll(page);
-        return atividades;
+    public Page<AtletaModel> visualizarAtletas(@RequestParam(required = false) Long idAlteta,
+            @PageableDefault(sort = "idAtleta", direction = Direction.ASC) Pageable page) {
+        Page<AtletaModel> atletas = atletaRepository.findAll(page);
+        return atletas;
     }
-
 }

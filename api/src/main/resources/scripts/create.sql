@@ -9,8 +9,8 @@ create table atleta (
     altura decimal(4,2),
     nome_atleta varchar(150),
     cpf varchar(11) unique,
-    senha varchar(15),
-    email varchar(100)
+    email varchar(100),
+    senha varchar(15)
 );
 
 drop table if exists percurso;
