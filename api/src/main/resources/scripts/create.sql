@@ -20,9 +20,16 @@ create table percurso (
     data date,
     tempo time,
     observacao varchar(100),
-    recompensa decimal(6,2),
     atleta bigint,
     atividade bigint
+);
+
+drop table if exists recompensa;
+create table recompensa (
+    id_recompensa bigint primary key auto_increment,
+    cotacao decimal(6,2),
+    total_recompensa decimal(6,2),
+    percurso bigint
 );
 
 drop table if exists atividade;
@@ -39,4 +46,9 @@ alter table percurso add constraint fk_percurso_2
 alter table percurso add constraint fk_percurso_3
     foreign key (atividade)
     references atividade (id_atividade)
+    on delete restrict;
+
+alter table recompensa add constraint fk_recompensa
+    foreign key (percurso)
+    references percurso (id_percurso)
     on delete restrict;
