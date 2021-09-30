@@ -20,6 +20,7 @@ create table percurso (
     data date,
     tempo time,
     observacao varchar(100),
+    recompensa decimal(6,2),
     atleta bigint,
     atividade bigint
 );

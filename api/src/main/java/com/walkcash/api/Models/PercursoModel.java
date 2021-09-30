@@ -27,6 +27,7 @@ public class PercursoModel {
     private LocalTime tempo;
     private LocalDate data;
     private String observacao;
+    private BigDecimal recompensa;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "atleta", referencedColumnName = "id_atleta")
@@ -42,12 +43,13 @@ public class PercursoModel {
         this.idPercurso = idPercurso;
     }
 
-    public PercursoModel(Long idPercurso, BigDecimal distancia, LocalTime tempo, LocalDate data, String observacao, AtletaModel atleta, AtividadeModel atividade) {
+    public PercursoModel(Long idPercurso, BigDecimal distancia, LocalTime tempo, LocalDate data, String observacao, BigDecimal recompensa, AtletaModel atleta, AtividadeModel atividade) {
         this.idPercurso = idPercurso;
         this.distancia = distancia;
         this.tempo = tempo;
         this.data = data;
         this.observacao = observacao;
+        this.recompensa = recompensa;
         this.atleta = atleta;
         this.atividade = atividade;
     }
@@ -71,6 +73,10 @@ public class PercursoModel {
 
     public String getObservacao() {
         return observacao;
+    }
+
+    public BigDecimal getRecompensa() {
+        return recompensa;
     }
 
     public AtletaModel getAtleta() {
