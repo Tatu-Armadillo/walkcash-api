@@ -10,4 +10,6 @@ import org.springframework.stereotype.Service;
 @Repository
 public interface RecompensaRepository extends JpaRepository<RecompensaModel, Long>{
     
+    public RecompensaModel getByIdRecompensa(Long idRecompensa);
+
 }
