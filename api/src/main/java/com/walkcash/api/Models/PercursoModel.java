@@ -1,4 +1,4 @@
-package com.walkcash.api.Models;
+package com.walkcash.api.models;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

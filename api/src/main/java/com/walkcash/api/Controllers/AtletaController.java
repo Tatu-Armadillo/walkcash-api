@@ -1,7 +1,7 @@
-package com.walkcash.api.Controllers;
+package com.walkcash.api.controllers;
 
-import com.walkcash.api.Models.AtletaModel;
-import com.walkcash.api.Repositories.AtletaRepository;
+import com.walkcash.api.models.AtletaModel;
+import com.walkcash.api.repositories.AtletaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

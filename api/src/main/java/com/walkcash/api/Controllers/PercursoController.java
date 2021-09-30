@@ -1,7 +1,7 @@
-package com.walkcash.api.Controllers;
+package com.walkcash.api.controllers;
 
-import com.walkcash.api.Models.PercursoModel;
-import com.walkcash.api.Repositories.PercursoRepository;
+import com.walkcash.api.models.PercursoModel;
+import com.walkcash.api.repositories.PercursoRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

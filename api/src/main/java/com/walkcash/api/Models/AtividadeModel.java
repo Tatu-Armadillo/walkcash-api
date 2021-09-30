@@ -1,4 +1,4 @@
-package com.walkcash.api.Models;
+package com.walkcash.api.models;
 
 import javax.persistence.*;
 
